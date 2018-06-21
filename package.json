@@ -1,6 +1,6 @@
 {
   "name": "http-to-https",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "middleware to redirect http to https",
   "main": "http-to-https.js",
   "scripts": {

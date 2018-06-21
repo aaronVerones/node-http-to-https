@@ -1,5 +1,5 @@
 const searchIgnore = (value, ignores) => ignores.some(search => search.test(value));
-export default (ignoreHosts = [], ignoreRoutes = [], redirectCode = 302) => {
+const https = (ignoreHosts = [], ignoreRoutes = [], redirectCode = 302) => {
   return (req, res, next) => {
     if (req.headers['x-forwarded-proto'] !== 'https' && !searchIgnore(req.get('host'), ignoreHosts) &&
     !searchIgnore(req.path, ignoreRoutes)) {
@@ -9,3 +9,4 @@ export default (ignoreHosts = [], ignoreRoutes = [], redirectCode = 302) => {
     }
   };
 }
+module.exports = https;
