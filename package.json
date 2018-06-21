@@ -1,0 +1,19 @@
+{
+  "name": "http-to-https",
+  "version": "1.0.0",
+  "description": "middleware to redirect http to https",
+  "main": "http-to-https.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronVerones/node-http-to-https.git"
+  },
+  "author": "Aaron Verones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronVerones/node-http-to-https/issues"
+  },
+  "homepage": "https://github.com/aaronVerones/node-http-to-https#readme"
+}
